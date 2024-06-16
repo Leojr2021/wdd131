@@ -10,20 +10,14 @@ body {
     grid-column: 1 / 4;
   }
   
-  .left-sidebar {
-    background: lightblue;
-    grid-column: 1 / 2;
-  }
+ 
   
   main {
     background: coral;
     grid-column: 2 / 3;
   }
   
-  .right-sidebar {
-    background: yellow;
-    grid-column: 3 / 4;
-  }
+ 
   
   footer {
     background: wheat;
@@ -32,8 +26,9 @@ body {
     grid-column: 1 / 4;
   }
   
-  .left-sidebar,
-  .right-sidebar {
-    padding: 1rem;
+
+  nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
-  
