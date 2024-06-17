@@ -9,41 +9,52 @@
       name="description"
       content="Personal Portfolio for the WDD 131 course."
     />
-    <link rel="stylesheet" type="text/css" href="/styles/base.css" />
+    <link rel="stylesheet" type="text/css" href="styles/base.css" />
+    <script src="scripts/getdates.js" defer=""></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
-      <h1>WDD 131 - Mario Meza</h1>
+      <h1>WDD 131: Dynamic Web Fundamentals - Mario Meza Mancilla</h1>
       <nav>
         <ul>
           <li>
-            <a href="https://www.linkedin.com/in/leomezamancilla/">Linkedin</a>
+            <a class="black_link" href="https://www.linkedin.com/in/leomezamancilla/">Linkedin</a>
           </li>
-          <li><a href="https://byui.instructure.com/">I-Learn</a></li>
+          <li><a class="black_link" href="https://byui.instructure.com/">I-Learn</a></li>
           <li>
-            <a
+            <a class="black_link"
               href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7"
               >Scripture</a
             >
           </li>
-          <li><a href="#">Final Project</a></li>
+          <li><a class="black_link" href="#">Final Project</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
       <section class="card">
+        <div class="card_title">
+          <h2>About Me</h2>
+        </div>
         <div class="bio_text">
           <p>
-            Hello!👋 I'm Mario Meza, Software Developer.I'm from Lima, Peru and
+            Hello!👋 I'm Mario Meza, Software Developer. I'm from Lima, Peru and
             I'm passionate about new challenges, generating solutions, proposing
             new ideas, and always trying to learn and dominate new technologies.
           </p>
-          <img src="/images/headshot.jpg" alt="headshot" />
+          <img src="images/headshot.jpg" alt="headshot" />
         </div>
-        <h3>Lima, Peru</h3>
+        <h2>Lima, Peru</h2>
+        <hr>
         <div class="country_text">
-          <img src="/images/flag.jpg" alt="peruvian flag" />
+          <img src="images/flag.jpg" alt="peruvian flag" />
           <p>
             Lima is the capital of Peru located on the arid Pacific coast of the
             country. Although its colonial center is preserved, it is a
@@ -56,21 +67,40 @@
         </div>
       </section>
       <section class="card">
-        <ul>
-            <li><a href="https://dev.to/" target="_blank">Dev.to Community</a></li>
-            <li><a href="https://www.smashingmagazine.com/" target="_blank">Smashing Magazine</a></li>
-            <li><a href="https://css-tricks.com/" target="_blank">CSS Tricks</a></li>
-            <li><a href="https://www.w3schools.com/" target="_blank">W3 Schools</a></li>
-            <li><a href="https://www.udemy.com/" target="_blank">Udemy</a></li>
-            <li><a href="https://picsum.photos/" target="_blank">Lorem Picsum Image</a></li>
-        </ul>
+        <div class="card_title">
+          <h2>Web Dev Resources</h2>
+        </div>
+        <div class="list_container">
+          <ul>
+            <li>
+              <a class="black_link" href="https://dev.to/" target="_blank">Dev.to Community</a>
+            </li>
+            <li>
+              <a class="black_link" href="https://www.smashingmagazine.com/" target="_blank"
+                >Smashing Magazine</a
+              >
+            </li>
+            <li>
+              <a class="black_link" href="https://css-tricks.com/" target="_blank">CSS Tricks</a>
+            </li>
+            <li>
+              <a class="black_link" href="https://www.w3schools.com/" target="_blank">W3 Schools</a>
+            </li>
+            <li><a class="black_link" href="https://www.udemy.com/" target="_blank">Udemy</a></li>
+            <li>
+              <a class="black_link" href="https://picsum.photos/" target="_blank"
+                >Lorem Picsum Image</a
+              >
+            </li>
+          </ul>
+        </div>
+       
       </section>
     </main>
 
     <footer>
-        <p><span id="currentyear"></span>Mario Meza Mancilla - Peru</p>
-        <p id="lastModified">Last Modification:</p>
-    
+      <p><span id="currentyear"></span> 🚀 Mario Meza Mancilla 🚀 Lima - Peru</p>
+      <p id="lastModified"></p>
     </footer>
   </body>
 </html>
