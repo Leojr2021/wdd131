@@ -21,7 +21,7 @@ h6 {
 p {
   font-family: var(--paragraph-font);
 }
-.black_link {
+/* .black_link {
   text-decoration: none;
   position: relative;
   color: #000;
@@ -84,7 +84,7 @@ p {
   &:hover:after {
     width: 100%;
   }
-}
+} */
 
 
 
