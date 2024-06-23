@@ -101,6 +101,9 @@ nav ul li{
     list-style-type: none;
     
 }
+nav ul li a:hover{
+  color: #e3dfdb;
+}
 
 footer {
   background-color: var(--primary-color);
