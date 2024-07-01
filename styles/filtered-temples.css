@@ -1,0 +1,94 @@
+@media (678px <= width <= 1000px) {
+  #cards_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 15px;
+  }
+}
+
+@media (width <= 678px) {
+  #cards_container {
+    
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+  }
+  .temple_card {
+    max-width: none;
+  }
+}
+
+@media (width <= 1000px) {
+  #menu {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 0.5rem 0.5rem;
+    /* background-color: #eee; */
+    margin: auto 0;
+    color: #fff;
+  }
+  #menu::before {
+    content: "≡";
+  }
+  #menu.show::before {
+    content: "X";
+    z-index: 999;
+    top: 25px;
+    right: 25px;
+    position: fixed;
+  }
+  nav {
+    display: none;
+    z-index: 999;
+    position: fixed;
+    width: 270px;
+    height: 100vh;
+    top: 0;
+    right: 0;
+  }
+  nav ul {
+    flex-direction: column;
+    padding: 0 20px!important;
+    row-gap: 20px;
+    width: 100%;
+  }
+  nav ul li {
+    padding-left: 0 !important;
+    text-align: center;
+    margin: 0;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #999;
+
+  }
+  nav ul li a{
+    font-size: 25px;
+    padding: 10px;
+    }
+
+  /* when the button is clicked - the open class is toggled (added/removed) */
+  .show {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .active::before {
+    content: "📍"; /* just a wayfinding symbol for the user */
+  }
+
+  .navbar_container h1 {
+    font-size: 48px;
+  }
+}
+
+@media (width >= 1000px) {
+  #menu {
+    display: none;
+  }
+}

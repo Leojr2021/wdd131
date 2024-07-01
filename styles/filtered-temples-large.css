@@ -1,0 +1,140 @@
+
+:root {
+  --heading-font: "Pathway Gothic One", sans-serif;
+  --paragraph-font: "Roboto", sans-serif;
+  --primary-color: #042d49;
+  --accent-color: #e3dfdb;
+}
+body {
+  margin: 0;
+  width: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+  text-transform: uppercase;
+}
+p {
+  font-family: var(--paragraph-font);
+}
+h1{
+    font-size: 3.5rem;
+}
+h2{
+    font-size: 3rem;
+}
+h3{
+    font-size: 2.5rem;
+}
+
+/* *******************Links******************************* */
+
+
+.black_link {
+  text-decoration: none;
+
+  color: #000;
+
+  text-transform: uppercase;
+}
+.black_link:hover {
+  color: #042d49;
+}
+
+.white_link {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.white_link:hover {
+  color: #e3dfdb;
+}
+
+/* ********************************************* */
+header {
+   
+    width: 100%;
+    background-color: var(--primary-color);
+  }
+
+main {
+    max-width: 1440px;
+    
+    margin: auto;
+    padding: 64px 25px;
+    
+  }
+  
+  
+/* ************************NAVBAR*********************** */
+
+header h1{
+    color: #fff;
+}
+.navbar_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1440px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin: auto;
+
+}
+nav {
+    background-color: var(--primary-color);
+    margin: auto 0;
+  }
+nav ul {
+
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  padding: 20px 0;
+}
+nav ul li{
+    padding-left: 40px;
+    list-style-type: none;
+    
+}
+nav ul li a:hover{
+  color: #e3dfdb;
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 25px;
+}
+footer p {
+  margin: 0;
+  text-align: center;
+  font-size: 18px;
+}
+/* ********************** */
+
+
+#cards_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); 
+  gap: 20px;
+  padding: 20px;
+}
+
+
+.temple_card {
+  background-color: var(--accent-color);
+  padding: 15px;
+  text-align: center;
+  max-width: 350px;
+}
+
+.temple_card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}

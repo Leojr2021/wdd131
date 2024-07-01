@@ -1,0 +1,97 @@
+
+:root {
+    --heading-font: "Pathway Gothic One", sans-serif;
+    --paragraph-font: "Roboto", sans-serif;
+    --primary-color: #042d49;
+    --accent-color: #e3dfdb;
+  }
+  body {
+    margin: 0;
+    width: 100%;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--heading-font);
+    text-transform: uppercase;
+  }
+  p {
+    font-family: var(--paragraph-font);
+  }
+  h1{
+      font-size: 3.5rem;
+  }
+  h2{
+      font-size: 3rem;
+  }
+  h3{
+      font-size: 2.5rem;
+  }
+  
+  /* *******************Links******************************* */
+  
+  /* ********************************************* */
+  header {
+     
+      width: 100%;
+      background-color: var(--primary-color);
+    }
+  
+  main {
+      max-width: 1440px;
+      
+      margin: auto;
+      padding: 64px 25px;
+      
+    }
+    
+    
+  /* ************************NAVBAR*********************** */
+  
+  header h1{
+      color: #fff;
+  }
+
+  footer {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 25px;
+  }
+  footer p {
+    margin: 0;
+    text-align: center;
+    font-size: 18px;
+  }
+  /* ********************** */
+  
+
+  @media (width >= 1001px) {
+  .cards_container{
+      display: block;
+      /* grid-template-columns: 1fr 1fr; */
+      /* column-gap: 15px; */
+      /* grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)) */
+  }
+  }
+ 
+  
+   img {
+      height: 400px;
+      width: 600px;
+      
+      display: block;
+      margin: 0 auto;
+      animation: fade 10s;
+  }
+  @keyframes fade{
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
+  
