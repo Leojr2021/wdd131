@@ -108,7 +108,7 @@ const temples = [
 
 const templeContainer = document.getElementById('cards_container');
 
-
+const subtitle = document.getElementById('sub_title');
 
 
 
@@ -161,22 +161,27 @@ function filterTemples(type) {
   document.getElementById('filter_home').addEventListener('click', () => {
 	const filteredTemples = filterTemples('home');
 	generateTempleCards(filteredTemples);
+	subtitle.textContent = "Home"
   });
 
   document.getElementById('filter_old').addEventListener('click', () => {
 	const filteredTemples = filterTemples('old');
 	generateTempleCards(filteredTemples);
+	subtitle.textContent = "Old"
   });
   document.getElementById('filter_new').addEventListener('click', () => {
 	const filteredTemples = filterTemples('new');
 	generateTempleCards(filteredTemples);
+	subtitle.textContent = "new"
   });
   document.getElementById('filter_large').addEventListener('click', () => {
 	const filteredTemples = filterTemples('large');
 	generateTempleCards(filteredTemples);
+	subtitle.textContent = "Large"
   });
   document.getElementById('filter_small').addEventListener('click', () => {
 	const filteredTemples = filterTemples('small');
 	generateTempleCards(filteredTemples);
+	subtitle.textContent = "Small"
   });
   
