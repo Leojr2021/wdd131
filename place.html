@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Place - Dynamic Web Fundamentals - Mario Meza</title>
+    <meta name="author" content="Mario Leo Meza Mancilla" />
+    <meta name="description" content="Week 03 assignment" />
+    <link rel="stylesheet" type="text/css" href="styles/place-large.css" />
+    <link rel="stylesheet" type="text/css" href="styles/place-mobile.css" />
+
+    <script src="scripts/place.js" defer=""></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Proza+Libre:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Machu Pichu</h1>
+    </header>
+
+    <main>
+      <picture>
+        <source
+          media="(min-width:900px )"
+          srcset="images/desktop-machu-picchu.webp"
+        />
+        <img
+          class="current_image"
+          src="images/mobile-machu-pichu.webp"
+          alt="Trujillo Peru temple exteriors photo."
+        />
+      </picture>
+      <section class="data-section">
+        <h3>Data</h3>
+        <div class="table_container">
+          <table>
+            <tbody>
+              <tr>
+                <td class="table_label">Area:&nbsp;</td>
+                <td>67041 sq km</td>
+              </tr>
+              <tr>
+                <td class="table_label">Population:&nbsp;</td>
+                <td>7,691,018</td>
+              </tr>
+              <tr>
+                <td class="table_label">Capital:&nbsp;</td>
+                <td>Cuzco</td>
+              </tr>
+              <tr>
+                <td class="table_label">Languages:&nbsp;</td>
+                <td>Spanish</td>
+              </tr>
+              <tr>
+                <td class="table_label">Currency:&nbsp;</td>
+                <td>Soles</td>
+              </tr>
+              <tr>
+                <td class="table_label">Timezone:&nbsp;</td>
+                <td>UTC -5</td>
+              </tr>
+              <tr>
+                <td class="table_label">Calling Code:&nbsp;</td>
+                <td>+51</td>
+              </tr>
+              <tr>
+                <td class="table_label">Internet TLD:&nbsp;</td>
+                <td>.mg</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section class="weather_section">
+        <h3 class="weather_heading">
+          Weather
+          <img
+            class="weather_svg"
+            src="images/weather_icon.svg"
+            alt="Weather Icon"
+          />
+        </h3>
+        <div class="table_container">
+        <table>
+          <tbody>
+            <tr>
+              <td class="table_label">Temperature:&nbsp;</td>
+              <td id="temperatureValue">15°C</td>
+            </tr>
+            <tr>
+              <td class="table_label">Conditions:&nbsp;</td>
+              <td>Cloudy</td>
+            </tr>
+            <tr>
+              <td class="table_label">Wind:&nbsp;</td>
+              <td id="windSpeedValue">5 <span>km/h</span></td>
+            </tr>
+            <tr>
+              <td class="table_label">Wind Chill:&nbsp;</td>
+              <td id="windChillValue"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      </section>
+    </main>
+
+    <footer>
+      <p><span id="currentyear"></span> 🚀 Mario Meza Mancilla 🚀 Peru</p>
+      <p id="lastModified"></p>
+    </footer>
+  </body>
+</html>
