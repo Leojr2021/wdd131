@@ -104,43 +104,38 @@ const temples = [
   },
 ];
 
+const templeContainer = document.getElementById("cards_container");
 
-
-const templeContainer = document.getElementById('cards_container');
-
-const subtitle = document.getElementById('sub_title');
-
-
-
+const subtitle = document.getElementById("sub_title");
 
 function filterTemples(type) {
-	switch (type) {
-	  case 'old':
-		return temples.filter(temple => {
-		  const yearDedicated = parseInt(temple.dedicated.split(',')[0]);
-		  return yearDedicated < 1900;
-		});
-	  case 'new':
-		return temples.filter(temple => {
-		  const yearDedicated = parseInt(temple.dedicated.split(',')[0]);
-		  return yearDedicated > 2000;
-		});
-	  case 'large':
-		return temples.filter(temple => temple.area > 90000);
-	  case 'small':
-		return temples.filter(temple => temple.area < 10000);
-	   // Display all temples
-	  default:
-		return temples;
-	}
+  switch (type) {
+    case "old":
+      return temples.filter((temple) => {
+        const yearDedicated = parseInt(temple.dedicated.split(",")[0]);
+        return yearDedicated < 1900;
+      });
+    case "new":
+      return temples.filter((temple) => {
+        const yearDedicated = parseInt(temple.dedicated.split(",")[0]);
+        return yearDedicated > 2000;
+      });
+    case "large":
+      return temples.filter((temple) => temple.area > 90000);
+    case "small":
+      return temples.filter((temple) => temple.area < 10000);
+    // Display all temples
+    default:
+      return temples;
   }
-  
+}
 
-  function generateTempleCards(filteredTemples = temples) { // Default to all temples
-	templeContainer.innerHTML = ''; // Clear previous cards
-  
-	filteredTemples.forEach(temple => {
-	  const cardHTML = `
+function generateTempleCards(filteredTemples = temples) {
+  // Default to all temples
+  templeContainer.innerHTML = ""; // Clear previous cards
+
+  filteredTemples.forEach((temple) => {
+    const cardHTML = `
 		  <div class="temple_card">
 			   
 			  <h3>${temple.templeName}</h3>
@@ -150,38 +145,35 @@ function filterTemples(type) {
 			  <img src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy">
 		  </div>
 	  `;
-	  templeContainer.innerHTML += cardHTML; 
-	});
-  }
+    templeContainer.innerHTML += cardHTML;
+  });
+}
 
+generateTempleCards();
 
+document.getElementById("filter_home").addEventListener("click", () => {
+  const filteredTemples = filterTemples("home");
+  generateTempleCards(filteredTemples);
+  subtitle.textContent = "Home";
+});
 
-  generateTempleCards();
-  
-  document.getElementById('filter_home').addEventListener('click', () => {
-	const filteredTemples = filterTemples('home');
-	generateTempleCards(filteredTemples);
-	subtitle.textContent = "Home"
-  });
-
-  document.getElementById('filter_old').addEventListener('click', () => {
-	const filteredTemples = filterTemples('old');
-	generateTempleCards(filteredTemples);
-	subtitle.textContent = "Old"
-  });
-  document.getElementById('filter_new').addEventListener('click', () => {
-	const filteredTemples = filterTemples('new');
-	generateTempleCards(filteredTemples);
-	subtitle.textContent = "new"
-  });
-  document.getElementById('filter_large').addEventListener('click', () => {
-	const filteredTemples = filterTemples('large');
-	generateTempleCards(filteredTemples);
-	subtitle.textContent = "Large"
-  });
-  document.getElementById('filter_small').addEventListener('click', () => {
-	const filteredTemples = filterTemples('small');
-	generateTempleCards(filteredTemples);
-	subtitle.textContent = "Small"
-  });
-  
+document.getElementById("filter_old").addEventListener("click", () => {
+  const filteredTemples = filterTemples("old");
+  generateTempleCards(filteredTemples);
+  subtitle.textContent = "Old";
+});
+document.getElementById("filter_new").addEventListener("click", () => {
+  const filteredTemples = filterTemples("new");
+  generateTempleCards(filteredTemples);
+  subtitle.textContent = "new";
+});
+document.getElementById("filter_large").addEventListener("click", () => {
+  const filteredTemples = filterTemples("large");
+  generateTempleCards(filteredTemples);
+  subtitle.textContent = "Large";
+});
+document.getElementById("filter_small").addEventListener("click", () => {
+  const filteredTemples = filterTemples("small");
+  generateTempleCards(filteredTemples);
+  subtitle.textContent = "Small";
+});
