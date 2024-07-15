@@ -52,3 +52,18 @@ function loadProduct() {
     selectElement.appendChild(option);
   });
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+  const reviewForm = document.getElementById('reviewForm');
+ 
+
+  reviewForm.addEventListener('submit', (event) => {
+      console.log("entre");
+      event.preventDefault();// Prevent the form from submitting the traditional way
+      let reviewCount = parseInt(localStorage.getItem('reviewCount')) || 0;
+      reviewCount++;  
+      localStorage.setItem('reviewCount', reviewCount);
+      
+     
+  });
+});
