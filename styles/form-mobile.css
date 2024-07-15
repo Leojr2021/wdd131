@@ -17,7 +17,9 @@ h6 {
   font-family: var(--heading-font);
   text-transform: uppercase;
 }
-p {
+p,
+label,
+input {
   font-family: var(--paragraph-font);
 }
 h1 {
@@ -135,6 +137,6 @@ input[type="number"] {
 .checkbox-item {
  padding-bottom: 0.7rem;
 }
-legend{
+.form-items p{
   padding-bottom: 0.5rem;
 }
