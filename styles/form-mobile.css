@@ -132,3 +132,9 @@ input[type="number"] {
 }
 
 
+.checkbox-item {
+ padding-bottom: 0.7rem;
+}
+legend{
+  padding-bottom: 0.5rem;
+}
