@@ -1,142 +1,142 @@
 :root {
-  --heading-font: "Oswald", sans-serif;
-  --paragraph-font: "Archivo", sans-serif;
-  --primary-color: #294f4a;
-  --accent-color: #ebe7e0;
-}
-body {
-  margin: 0;
-  width: 100%;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: var(--heading-font);
-  text-transform: uppercase;
-}
-p,
-label,
-input {
-  font-family: var(--paragraph-font);
-}
-h1 {
-  font-size: 2.5rem;
-}
-h2 {
-  font-size: 20rem;
-}
-h3 {
-  font-size: 1.5rem;
-}
-
-footer {
-  background-color: var(--primary-color);
-  color: #fff;
-  padding: 25px;
-}
-footer p {
-  margin: 0;
-  text-align: center;
-  font-size: 18px;
-}
-/* ******************************************************************** */
-
-main {
-  max-width: 1440px;
-
-  margin: auto;
-  padding: 64px 25px ;
-}
-
-section {
-  padding: 1rem;
-}
-
-header {
-  text-align: center;
-  width: 100%;
-  padding: 1rem 0;
-  background-color: var(--primary-color);
-  color: #fff;
-}
-/* ********************************************************* */
-
-input[type="radio"] {
-  display: none;
-  position: relative;
-  caret-color: rgba(0, 0, 0, 0);
-}
-
-.stars {
-  justify-content: left;
-  display: flex;
-  flex-direction: row-reverse;
-}
-
-.stars > label {
-  color: gold;
-  width: 30px;
-  height: 30px;
-  font-size: 2rem;
-  margin-left: 5px;
-  display: flex;
-  align-items: center;
-  caret-color: rgba(0, 0, 0, 0); 
-}
-
-.stars > label:hover {
-  color: #000;
-}
-
-.stars > label::before {
-  content: "\2606";
-}
-
-.stars input:checked ~ label::before {
-  content: "\2605";
-}
-
-
-.form-items {
+    --heading-font: "Oswald", sans-serif;
+    --paragraph-font: "Archivo", sans-serif;
+    --primary-color: #294f4a;
+    --accent-color: #ebe7e0;
+  }
+  body {
+    margin: 0;
+    width: 100%;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--heading-font);
+    text-transform: uppercase;
+  }
+  p,
+  label,
+  input {
+    font-family: var(--paragraph-font);
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 20rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
   
-  display: flex;
-  flex-direction: column;
-}
-
-.form-items select,
-input[type="text"],
-input[type="date"],
-input[type="password"],
-input[type="number"] {
-  padding: 0.5rem;
-  font-size: 1rem;
-  border: 1px solid #999;
-  border-radius: 4px;
-}
-
-.form input[type="submit"] {
-  background-color: var(--primary-color);
-  color: #fff;
-  padding: 1rem 1rem;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.form {
+  footer {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 25px;
+  }
+  footer p {
+    margin: 0;
+    text-align: center;
+    font-size: 18px;
+  }
+  /* ******************************************************************** */
   
-  display: flex;
-  flex-direction: column;
-  row-gap: 27px;
-}
-
-
-.checkbox-item {
- padding-bottom: 0.7rem;
-}
-.form-items p{
-  padding-bottom: 0.5rem;
-}
+  main {
+    max-width: 1440px;
+  
+    margin: auto;
+    padding: 64px 25px ;
+  }
+  
+  section {
+    padding: 1rem;
+  }
+  
+  header {
+    text-align: center;
+    width: 100%;
+    padding: 1rem 0;
+    background-color: var(--primary-color);
+    color: #fff;
+  }
+  /* ********************************************************* */
+  
+  input[type="radio"] {
+    display: none;
+    position: relative;
+    caret-color: rgba(0, 0, 0, 0);
+  }
+  
+  .stars {
+    justify-content: left;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  
+  .stars > label {
+    color: gold;
+    width: 30px;
+    height: 30px;
+    font-size: 2rem;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    caret-color: rgba(0, 0, 0, 0); 
+  }
+  
+  .stars > label:hover {
+    color: #000;
+  }
+  
+  .stars > label::before {
+    content: "\2606";
+  }
+  
+  .stars input:checked ~ label::before {
+    content: "\2605";
+  }
+  
+  
+  .form-items {
+    
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-items select,
+  input[type="text"],
+  input[type="date"],
+  input[type="password"],
+  input[type="number"] {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #999;
+    border-radius: 4px;
+  }
+  
+  .form input[type="submit"] {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 1rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .form {
+    
+    display: flex;
+    flex-direction: column;
+    row-gap: 27px;
+  }
+  
+  
+  .checkbox-item {
+   padding-bottom: 0.7rem;
+  }
+  .form-items p{
+    padding-bottom: 0.5rem;
+  }

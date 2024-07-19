@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Top Miami Real Estate Agent | Mario Meza</title>
     <meta name="author" content="Mario Meza" />
-    <meta name="description" content="Contact Mario Meza, Florida expert, to find your dream home now." />
+    <meta
+      name="description"
+      content="Contact Mario Meza, Florida expert, to find your dream home now."
+    />
     <link rel="stylesheet" href="styles/large.css" />
     <link rel="stylesheet" href="styles/mobile.css" />
+    <link rel="stylesheet" href="styles/form-desktop.css" />
+    <link rel="stylesheet" href="styles/form-mobile.css" />
     <script defer src="scripts/menu.js"></script>
+    <script defer src="scripts/form.js"></script>
+    <script src="scripts/getdates.js" defer=""></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,44 +25,285 @@
   </head>
 
   <body>
-    <header>
+    <section class="hov">
+      <header>
         <div class="navbar_container">
           <div class="logo_container">
-            <img src="images/mario-colored-logo.webp" alt="logo">
+            <img src="images/mario-white-logo.webp" alt="logo" />
           </div>
-  
+
           <nav>
             <ul class="navigation">
-              <li><a id="filter_home" class="black_link side_menu" href="#">Home</a></li>
-              <li><a id="filter_old" class="black_link side_menu" href="#">About</a></li>
-              <li><a id="filter_new" class="black_link side_menu" href="#">Portfolio</a></li>
-              <li><a id="filter_small" class="black_link side_menu" href="#">Testimonials</a></li>
-              
+              <li>
+                <a id="" class="white_link side_menu" href="#">Home</a>
+              </li>
+              <li>
+                <a id="" class="white_link side_menu" href="#">About</a>
+              </li>
+              <li>
+                <a id="" class="white_link side_menu" href="#">Portfolio</a>
+              </li>
+              <li>
+                <a id="" class="white_link side_menu" href="#">Testimonials</a>
+              </li>
             </ul>
-            
           </nav>
           <a id="menu" href="#"></a>
         </div>
       </header>
-    <main>
-      
       <div class="video-background">
         <div class="overlay-component"></div>
         <video autoplay muted loop id="bg-video">
-            <source src="images/hov.mp4" type="video/mp4">
+          <source src="images/hov.mp4" type="video/mp4" />
         </video>
-    </div>
+      </div>
       <div class="main-content">
         <h1>Mario Meza Mancilla</h1>
         <p>Florida Real Estate Expert</p>
         <div class="buttons">
-            <a href="#" class="btn button-style-transparent">Home Search</a>
-            <a href="#" class="btn button-style-filled">Testimonials</a>
+          <a href="#" class="btn button-style-transparent">Home Search</a>
+          <a href="#" class="btn button-style-filled">Testimonials</a>
         </div>
-    </div>
-    </main>
-    <footer>
-      
+      </div>
+    </section>
+
+    <section class="vertical-paddings opening_section horizontal-paddings">
+      <img src="images/favicon.webp" alt="favicon" />
+      <h2>Your Trusted Real Estate Partner</h2>
+      <p>
+        Buying, selling, or just looking? No matter what you're looking for,
+        take advantage of my specialized knowledge and expert services to make
+        sure you get the best opportunities available. I’ll make sure everything
+        runs smoothly, and that you're provided the highest quality customer
+        service possible.
+      </p>
+    </section>
+    <section class="featured_agent vertical-paddings">
+      <div class="headshot_container">
+        <img src="images/headshot.webp" alt="headshot" />
+      </div>
+      <div class="text_container">
+        <h2>Meet Mario</h2>
+        <p>
+          Born and raised under the Florida sun, my love for this vibrant state
+          runs deep. From the bustling energy of Miami to the serene beaches of
+          Naples, I've explored every corner and witnessed firsthand the unique
+          charm of each community. As a Florida native, I offer an insider's
+          perspective on the market, neighborhoods, and lifestyle that only a
+          local can provide.
+        </p>
+        <p>
+          With 10+ years of experience in the Florida real estate market, I've
+          honed my skills and knowledge to become a trusted advisor to my
+          clients. I specialize in luxury waterfront properties, first-time
+          homebuyers, investment properties, relocation. Whether you're
+          searching for your dream home, selling a cherished property, or
+          looking to invest in Florida's thriving market, I'm committed to
+          providing personalized service, expert guidance, and unwavering
+          support throughout your real estate journey.
+        </p>
+        <a href="#" class="btn button-style-filled">Learn More</a>
+      </div>
+    </section>
+    <section class="featured_properties vertical-paddings horizontal-paddings">
+      <h2>Featured Properties</h2>
+      <div class="cards_container">
+        <div class="card">
+          <img
+            src="images/properties/big_pool_in_modern_home_in_Sarasota_Florida_ligh_77b97357-da7d-4574-a917-baf517b79a0e.png"
+            alt="featured property 1"
+          />
+          <div class="text_container">
+            <h3>Featured Property 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="images/properties/Miramar Beach_Florida - IG Square Post.jpg"
+            alt="featured property 1"
+          />
+          <div class="text_container">
+            <h3>Featured Property 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="images/properties/Waterfront Home in Florida - IG Square Post.jpg"
+            alt="featured property 1"
+          />
+          <div class="text_container">
+            <h3>Featured Property 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn black_button-style-filled">View All</a>
+    </section>
+
+    <section class="featured_testimonials vertical-paddings">
+      <h2>My Testimonials</h2>
+      <div class="testimonials_container">
+        <div class="testimonial_item">
+          <img src="images/quote-logo-light.png" alt="featured property 1" />
+          <div class="text_container-testimonial">
+            <p>
+              We were so lucky to have Mario guide us through our first
+              home-buying experience in Florida. As newcomers to the state, we
+              had a lot of questions and Mario was incredibly patient and
+              informative. They really took the time to understand our needs and
+              preferences and found us the perfect home in our dream
+              neighborhood. We couldn't be happier!"
+            </p>
+          </div>
+        </div>
+        <div class="testimonial_item">
+          <img src="images/quote-logo-light.png" alt="featured property 1" />
+          <div class="text_container-testimonial">
+            <p>
+              Mario is a true professional. When we decided to sell our
+              waterfront property, they went above and beyond to market it
+              effectively. We were impressed with their negotiation skills and
+              how they always kept our best interests at heart. We highly
+              recommend Mario to anyone looking to buy or sell in the
+              competitive Florida market.
+            </p>
+          </div>
+        </div>
+        <div class="testimonial_item">
+          <img src="images/quote-logo-light.png" alt="featured property 1" />
+          <div class="text_container-testimonial">
+            <p>
+              As investors looking to expand our real estate portfolio in
+              Florida, we needed a realtor with deep market knowledge and strong
+              connections. Mario exceeded our expectations. They found us
+              several off-market opportunities and helped us negotiate amazing
+              deals. Their expertise and dedication to their clients are second
+              to none.
+            </p>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn button-style-filled">View All</a>
+    </section>
+    <section class="form_container vertical-paddings">
+      <h2>Let's Connect</h2>
+      <form id="reviewForm" action="review.html" method="get" class="form">
+        <div class="form-items">
+          <label for="userName">Full Name</label>
+          <input type="text" id="userName" name="userName" />
+        </div>
+
+        <div class="form-items">
+          <label for="product">Interest:</label>
+          <select id="product" name="product" required>
+            <option value="" disabled selected>Select an option...</option>
+          </select>
+        </div>
+
+        <div class="form-items">
+          <label for="review">Message</label>
+          <textarea id="review" name="review" rows="4" cols="50"></textarea>
+        </div>
+
+        <input
+          class="btn black_button-style-filled"
+          type="submit"
+          value="SUBMIT"
+        />
+      </form>
+    </section>
+    <footer class="vertical-paddings">
+      <h2 >Mario Meza</h2>
+      <div class="contact_information-container horizontal-paddings">
+        <div class="contact_information-image">
+          <img src="images/compass-light.png" alt="compass logo" />
+        </div>
+        <div class="contact_information-text">
+          <div class="info-wrap-contact_zone">
+            <div class="info-wrap-contact_cell">
+              <i>
+                <svg
+                  width="30"
+                  height="19"
+                  viewBox="0 0 30 19"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2 0C0.903517 0 0 0.903517 0 2V16.6667C0 17.7631 0.903517 18.6667 2 18.6667H28C29.0965 18.6667 30 17.7631 30 16.6667V2C30 0.903517 29.0965 0 28 0H2ZM2.4375 1.33333H27.5625L15.6458 11.4896C15.3389 11.7512 14.6612 11.7512 14.3542 11.4896L2.4375 1.33333ZM1.33333 2.13542L10.1979 9.6979L1.33333 16.5729V2.13542ZM28.6667 2.13542V16.5729L19.8021 9.6979L28.6667 2.13542ZM11.2396 10.5833L13.4896 12.5C14.3543 13.2369 15.6457 13.2369 16.5104 12.5L18.7604 10.5833L27.4687 17.3333H2.53125L11.2396 10.5833Z"
+                    fill="#fff"
+                  ></path>
+                </svg>
+              </i>
+              <p class="contact_title">Email</p>
+              <a
+                href="mailto:mario.meza@compass.com"
+                class="white_link"
+                >mario.meza@compass.com</a
+              >
+            </div>
+            <div class="info-wrap-contact_cell">
+              <i
+                ><svg
+                  width="30"
+                  height="25"
+                  viewBox="0 0 30 25"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M10.7964 8.1207H19.2036V8.7279C19.2036 10.8195 20.9082 12.5259 23.001 12.5259H24.741L25.2852 20.7051C25.3776 22.1235 24.2868 23.2719 22.8822 23.2719H7.0032C5.5944 23.2719 4.5084 22.1085 4.6002 20.7039C4.782 17.9895 4.9152 15.2313 5.154 12.5265H6.9996C9.0918 12.5265 10.797 10.8207 10.797 8.7285V8.1207H10.7964ZM11.46 16.5807C11.46 14.6565 13.0188 13.0977 14.943 13.0977C16.8666 13.0977 18.4254 14.6571 18.4254 16.5807C18.4254 18.5055 16.8678 20.0631 14.943 20.0631C13.02 20.0637 11.46 18.5043 11.46 16.5807ZM14.943 12.0381C12.4344 12.0381 10.4004 14.0721 10.4004 16.5807C10.4004 19.0887 12.435 21.1233 14.943 21.1233C17.4486 21.1233 19.485 19.0869 19.485 16.5807C19.485 14.0727 17.451 12.0381 14.943 12.0381ZM9.0846 4.8363C8.22 4.8363 7.512 5.5443 7.512 6.4089V8.7285C7.512 9.0093 7.2804 9.2415 6.999 9.2415H1.5726C1.2906 9.2415 1.0596 9.0111 1.0596 8.7285V6.9285C1.0596 6.4797 1.1628 6.0945 1.3902 5.7069C1.896 4.8465 2.7294 4.1013 3.795 3.4749C9.279 0.2517 20.7192 0.2523 26.2044 3.4749C27.2706 4.1013 28.104 4.8465 28.6098 5.7069C28.8354 6.0921 28.9398 6.4815 28.9398 6.9285V8.7285C28.9398 9.0111 28.71 9.2415 28.4268 9.2415H23.0004C22.719 9.2415 22.4874 9.0093 22.4874 8.7285V6.4089C22.4874 5.5425 21.7806 4.8363 20.9148 4.8363H9.0846ZM8.571 6.4089C8.571 6.1263 8.8026 5.8965 9.0846 5.8965H20.9154C21.1968 5.8965 21.429 6.1275 21.429 6.4089V8.7285C21.429 9.5943 22.1352 10.3017 23.001 10.3017H28.4274C29.292 10.3017 30 9.5931 30 8.7285V6.9285C30 6.2835 29.8464 5.7291 29.5206 5.1729C28.9188 4.1493 27.9564 3.2799 26.7384 2.5641C20.9214 -0.8547 9.0798 -0.8547 3.2622 2.5641C2.0436 3.2799 1.0812 4.1487 0.48 5.1729C0.153 5.7291 0 6.2835 0 6.9279V8.7279C0 9.5925 0.7092 10.3011 1.5726 10.3011H6.999C7.8648 10.3011 8.571 9.5937 8.571 8.7279V6.4089ZM9.7368 7.5915V8.7285C9.7368 10.2387 8.5092 11.4669 6.999 11.4669H4.6686C4.3914 11.4669 4.164 11.6799 4.1412 11.9511C3.8892 14.8347 3.7386 17.7435 3.5448 20.6331C3.4116 22.6425 4.989 24.3315 7.0032 24.3315H22.8822C24.882 24.3315 26.475 22.6575 26.3406 20.6343L25.7622 11.9607C25.7436 11.6811 25.5102 11.4675 25.2342 11.4675L23.001 11.4663C21.4902 11.4663 20.2632 10.2375 20.2632 8.7279V7.5909C20.2632 7.2981 20.0262 7.0611 19.7334 7.0611H10.2666C9.9738 7.0611 9.7368 7.2987 9.7368 7.5915Z"
+                    fill="#fff"
+                  ></path></svg
+              ></i>
+              <p class="contact_title">Phone Number</p>
+              <a
+                href="tel:(516) 242-4942"
+                class="white_link"
+                >(516) 242-4942</a
+              >
+            </div>
+          </div>
+          <div class="info-wrap-contact_zone">
+            <div class="info-wrap-contact_cell">
+              <i>
+                <svg
+                  width="31"
+                  height="30"
+                  viewBox="0 0 31 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M29.9821 6.49489C29.7931 6.35756 29.679 6.32046 29.4572 6.39228L20.298 9.41368L16.1952 8.03558L15.8172 9.41525L19.7644 10.7038V28.1462L9.89831 25.7069V22.1034H8.71438V25.7515L1.21616 28.2532V15.3945H0.0322266V29.2729C0.0322266 29.5077 0.130098 29.7279 0.321106 29.8645C0.445418 29.9541 0.585911 29.9999 0.735086 29.9999C0.814804 29.9999 0.890971 29.9868 0.967926 29.96L9.48433 27.029L20.1792 29.7887C20.3224 29.8254 20.4751 29.8171 20.6152 29.7654L29.8104 26.2235C30.0942 26.1177 30.0251 25.8466 30.0251 25.5431V7.08291C30.0251 6.85086 30.17 6.63144 29.9821 6.49489ZM28.8412 25.0388L20.9483 28.0361V10.7065L28.8412 8.08649V25.0388Z"
+                    fill="#fff"
+                  ></path>
+                  <path
+                    d="M6.57515 19.1142C6.6671 19.422 6.95006 19.6323 7.2713 19.6323C7.59215 19.6323 7.87511 19.422 7.96746 19.1142C8.67742 16.7514 10.0393 15.2447 11.3559 13.788C12.9944 11.9747 14.5422 10.2615 14.5422 7.2717C14.5422 3.39788 11.1451 0 7.2713 0C3.39827 0 0 3.39748 0 7.2717C0 10.2615 1.54819 11.9747 3.18674 13.788C4.50328 15.2447 5.86479 16.7514 6.57515 19.1142ZM7.2713 1.45426C10.316 1.45426 13.0883 4.22663 13.0883 7.2717C13.0883 9.70191 11.7852 11.1435 10.2769 12.8121C9.2461 13.9534 8.10992 15.2096 7.2713 16.9199C6.43229 15.2096 5.29651 13.953 4.2657 12.8121C2.75698 11.1432 1.45426 9.70191 1.45426 7.2717C1.45426 4.22663 4.22663 1.45426 7.2713 1.45426Z"
+                    fill="#fff"
+                  ></path>
+                  <path
+                    d="M7.26193 10.1616C8.8705 10.1616 10.1795 8.86084 10.1795 7.26175C10.1795 5.66305 8.87089 4.3623 7.26193 4.3623C5.65297 4.3623 4.34473 5.66305 4.34473 7.26175C4.34512 8.86084 5.65336 10.1616 7.26193 10.1616ZM7.26193 5.81657C8.06898 5.81657 8.72527 6.46536 8.72527 7.26175C8.72527 8.05932 8.06898 8.70733 7.26193 8.70733C6.45528 8.70733 5.79899 8.05893 5.79899 7.26175C5.79899 6.46536 6.45528 5.81657 7.26193 5.81657Z"
+                    fill="#1A1A1A"
+                  ></path>
+                </svg>
+              </i>
+              <p class="info-wrap-contact_title">Address</p>
+              <p class="info-wrap-contact_link"></p>
+              <p>229 MAIN ST<br />HUNTINGTON FL 11743</p>
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <p class="copyright">
+        <span id="currentyear"></span> 🚀 Mario Meza Mancilla 🚀 
+      </p>
     </footer>
   </body>
 </html>
