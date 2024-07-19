@@ -67,21 +67,21 @@ const properties = [
   
 ];
 
-const propertyContainer = document.getElementById("cards_container");
+const propertyContainer = document.getElementById("cards_properties-container");
 
-const subtitle = document.getElementById("sub_title");
+const subtitle = document.getElementById("property_sub-title");
 
-function filterTemples(type) {
+function filterProperties(type) {
   switch (type) {
-    case "Luxury":
+    case "luxury":
       return properties.filter((property) => {
-        const yearDedicated = parseInt(property.dedicated.split(",")[0]);
-        return yearDedicated >= 1000000;
+        const price = property.price;
+        return price >= 1000000;
       });
-    case "Regular":
+    case "regular":
       return properties.filter((property) => {
-        const yearDedicated = parseInt(property.dedicated.split(",")[0]);
-        return yearDedicated < 1000000;
+        const price = property.price;
+        return price < 1000000;
       });
     
     // Display all properties
@@ -90,35 +90,39 @@ function filterTemples(type) {
   }
 }
 
-function generateTempleCards(filteredTemples = properties) {
+function generatePropertiesCards(filteredProperties = properties) {
   // Default to all properties
   propertyContainer.innerHTML = ""; // Clear previous cards
 
-  filteredTemples.forEach((property) => {
+  filteredProperties.forEach((property) => {
     const cardHTML = `
 		  <div class="property_card">
-			   
-			  <h3>${property.propertyName}</h3>
-			  <p>Location: ${property.location}</p>
-			  <p>Dedicated: ${property.dedicated}</p>
-			  <p>Size: ${property.area} sq ft</p>
+        <div class="card_image">
 			  <img src="${property.imageUrl}" alt="${property.propertyName}" loading="lazy">
+        </div>
+        <div class="card_text">
+			  <h3>${property.propertyName}</h3>
+			  <p>${property.address}</p>
+			  <p>$${property.price}</p>
+			  </div>
+			  
 		  </div>
 	  `;
     propertyContainer.innerHTML += cardHTML;
   });
 }
 
-generateTempleCards();
+generatePropertiesCards();
 
-document.getElementById("filter_home").addEventListener("click", () => {
-  const filteredTemples = filterTemples("luxury");
-  generateTempleCards(filteredTemples);
-  subtitle.textContent = "Luxury";
+document.getElementById("filter_luxury").addEventListener("click", () => {
+  const filteredProperties = filterProperties("luxury");
+  generatePropertiesCards(filteredProperties);
+  subtitle.textContent = "luxury";
 });
 
-document.getElementById("filter_old").addEventListener("click", () => {
-  const filteredTemples = filterTemples("Regular");
-  generateTempleCards(filteredTemples);
-  subtitle.textContent = "Regular";
+document.getElementById("filter_regular").addEventListener("click", () => {
+  const filteredProperties = filterProperties("regular");
+  generatePropertiesCards(filteredProperties);
+  subtitle.textContent = "regular";
 });
+
